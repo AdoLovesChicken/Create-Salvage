@@ -6,8 +6,6 @@ Finally, a use for all those excess tools and armor pieces!
 
 Create: Salvage provides a new category of recipes, allowing you to salvage raw materials from unwanted tools.
 
-![](./art/jei.png)
-
 ## Features
 
 - Place a Mixer above a Basin and a Blaze Burner below, then add your unwanted items. When complete, you will receive Ingots and Nuggets equal to half the crafting cost of the item. Damaged tools salvage into proportionally less raw material.
@@ -15,6 +13,8 @@ Create: Salvage provides a new category of recipes, allowing you to salvage raw 
 - A custom Ponder scene explaining the mod.
 - A custom JEI recipe category to view all applicable recipes.
 - Fully data-driven recipes for ease of modding and modpack development.
+
+![](./art/jei.png)
 
 ## Contribute
 Feel free to open a PR to either translate the mod or to add another feature! All help is appreciated!

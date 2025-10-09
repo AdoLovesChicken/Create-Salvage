@@ -49,8 +49,10 @@ public abstract class SalvagingRecipeGen extends RecipeProvider {
             switch (requiredHeat) {
                 case HEATED:
                     recipePath += "_heated";
+                    break;
                 case SUPERHEATED:
                     recipePath += "_superheated";
+                    break;
             }
 
             ResourceLocation recipeId = ResourceLocation.fromNamespaceAndPath(namespace, recipePath);

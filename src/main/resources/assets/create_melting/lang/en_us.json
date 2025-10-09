@@ -1,0 +1,11 @@
+{
+  "create_melting.configuration.title": "Create - Melting Configs",
+  "create_melting.configuration.section.createmelting.common.toml": "Create - Melting Configs",
+  "create_melting.configuration.section.createmelting.common.toml.title": "Create - Melting Configs",
+
+  "item.create_melting.diamond_nugget": "Diamond Nugget",
+
+  "tag.item.c.diamond_nuggets": "Diamond Nuggets",
+
+  "create.recipe.salvaging": "Salvaging"
+}

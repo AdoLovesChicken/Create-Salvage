@@ -6,7 +6,7 @@
       "request": "launch",
       "name": "Client",
       "presentation": {
-        "group": "Mod Development - Create - Melting Salvage",
+        "group": "Mod Development - Create - Melting",
         "order": 0
       },
       "projectName": "Create - Melting Salvage",
@@ -16,7 +16,7 @@
       ],
       "vmArgs": [
         "@E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\build\\moddev\\clientRunVmArgs.txt",
-        "-Dfml.modFolders\u003dcreatemeltingsalvage%%E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\bin\\main"
+        "-Dfml.modFolders\u003dcreatemelting%%E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\run",
       "env": {},
@@ -28,7 +28,7 @@
       "request": "launch",
       "name": "Data",
       "presentation": {
-        "group": "Mod Development - Create - Melting Salvage",
+        "group": "Mod Development - Create - Melting",
         "order": 1
       },
       "projectName": "Create - Melting Salvage",
@@ -38,7 +38,7 @@
       ],
       "vmArgs": [
         "@E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\build\\moddev\\dataRunVmArgs.txt",
-        "-Dfml.modFolders\u003dcreatemeltingsalvage%%E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\bin\\main"
+        "-Dfml.modFolders\u003dcreatemelting%%E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\run",
       "env": {},
@@ -50,7 +50,7 @@
       "request": "launch",
       "name": "GameTestServer",
       "presentation": {
-        "group": "Mod Development - Create - Melting Salvage",
+        "group": "Mod Development - Create - Melting",
         "order": 2
       },
       "projectName": "Create - Melting Salvage",
@@ -60,7 +60,7 @@
       ],
       "vmArgs": [
         "@E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\build\\moddev\\gameTestServerRunVmArgs.txt",
-        "-Dfml.modFolders\u003dcreatemeltingsalvage%%E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\bin\\main"
+        "-Dfml.modFolders\u003dcreatemelting%%E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\run",
       "env": {},
@@ -72,7 +72,7 @@
       "request": "launch",
       "name": "Server",
       "presentation": {
-        "group": "Mod Development - Create - Melting Salvage",
+        "group": "Mod Development - Create - Melting",
         "order": 3
       },
       "projectName": "Create - Melting Salvage",
@@ -82,7 +82,7 @@
       ],
       "vmArgs": [
         "@E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\build\\moddev\\serverRunVmArgs.txt",
-        "-Dfml.modFolders\u003dcreatemeltingsalvage%%E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\bin\\main"
+        "-Dfml.modFolders\u003dcreatemelting%%E:\\Programming\\Game Modding\\Minecraft Modding\\Workspace 1.21 NeoForge\\Create - Melting Salvage\\bin\\main"
       ],
       "cwd": "${workspaceFolder}\\run",
       "env": {},

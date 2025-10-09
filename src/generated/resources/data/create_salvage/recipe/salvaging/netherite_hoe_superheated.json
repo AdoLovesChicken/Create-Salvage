@@ -1,0 +1,13 @@
+{
+  "type": "create_salvage:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "minecraft:netherite_hoe"
+  },
+  "result_amount": 0.5,
+  "result_material": {
+    "ingot": "minecraft:netherite_ingot",
+    "nugget": "minecraft:netherite_scrap",
+    "ratio": 4
+  }
+}

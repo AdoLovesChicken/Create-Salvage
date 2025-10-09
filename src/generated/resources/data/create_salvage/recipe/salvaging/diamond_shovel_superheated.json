@@ -1,0 +1,13 @@
+{
+  "type": "create_salvage:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "minecraft:diamond_shovel"
+  },
+  "result_amount": 0.5,
+  "result_material": {
+    "ingot": "minecraft:diamond",
+    "nugget": "create_salvage:diamond_nugget",
+    "ratio": 9
+  }
+}

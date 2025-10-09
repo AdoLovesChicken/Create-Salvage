@@ -26,6 +26,7 @@ repositories {
     maven { url = "https://modmaven.dev" } // JEI (Fallback)
 
     maven { url = "https://api.modrinth.com/maven" }
+    maven { url = "https://cursemaven.com/" }
 }
 
 base {
@@ -132,9 +133,13 @@ dependencies {
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
     // JEI
-    // compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}") // JEI API
+    compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}") // JEI API
     // runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}") // JEI Mod
-    implementation("mezz.jei:jei-$minecraft_version-neoforge:$jei_version")
+    // implementation("mezz.jei:jei-$minecraft_version-neoforge:$jei_version")
+
+    // Additional mods
+    compileOnly("curse.maven:project-549225:6531439") // Framework
+    compileOnly("curse.maven:project-363703:6427515") // Goblin Traders
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

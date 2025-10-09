@@ -1,0 +1,13 @@
+{
+  "type": "create_salvage:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "minecraft:iron_pickaxe"
+  },
+  "result_amount": 3.0,
+  "result_material": {
+    "ingot": "minecraft:iron_ingot",
+    "nugget": "minecraft:iron_nugget",
+    "ratio": 9
+  }
+}

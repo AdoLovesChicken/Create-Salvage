@@ -1,0 +1,13 @@
+{
+  "type": "create_salvage:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "minecraft:golden_leggings"
+  },
+  "result_amount": 7.0,
+  "result_material": {
+    "ingot": "minecraft:gold_ingot",
+    "nugget": "minecraft:gold_nugget",
+    "ratio": 9
+  }
+}

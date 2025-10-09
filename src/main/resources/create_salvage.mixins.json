@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "priority": 1100,
+  "package": "com.elitemastereric.createsalvage.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MechanicalMixerBlockEntityMixin",
+    "BasinRecipeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

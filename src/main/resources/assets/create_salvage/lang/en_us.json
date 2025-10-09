@@ -1,0 +1,31 @@
+{
+  "item.create_salvage.diamond_nugget": "Diamond Nugget",
+
+  "tag.item.c.diamond_nuggets": "Diamond Nuggets",
+
+  "create.recipe.salvaging": "Salvaging",
+
+  "create_salvage.ponder.salvaging.main.header": "Introduction to Salvaging",
+
+  "create_salvage.ponder.shared.salvaging.main.text_1": "A Basin can salvage unwanted tools and armor into raw materials.",
+  "create_salvage.ponder.shared.salvaging.main.text_2": "Place a Mixer above the Basin and power it from the side.",
+  "create_salvage.ponder.shared.salvaging.main.text_3": "Place a Blaze Burner and give it fuel.",
+  "create_salvage.ponder.shared.salvaging.main.text_4": "Then, insert your unwanted tool, weapon, or armor piece into the heated Basin.",
+  "create_salvage.ponder.shared.salvaging.main.text_5": "The output is Ingots and Nuggets equal to half the crafting cost of the item.",
+  "create_salvage.ponder.shared.salvaging.main.text_6": "Damaged items output proportionally less metal.",
+  "create_salvage.ponder.shared.salvaging.main.text_7": "Superheating the Blaze Burner lets you salvage the full value of metal items.",
+  "create_salvage.ponder.shared.salvaging.main.text_8": "It also enables salvaging higher rarity items, like Diamond or Netherite.",
+  "create_salvage.ponder.shared.salvaging.main.text_9": "You will only receive half the crafting cost of these higher rarity items.",
+
+  "create_salvage.ponder.shared.salvaging.secret.text_7": "Superheating the Blaze Burner lets you... hang on just a moment.",
+  "create_salvage.ponder.shared.salvaging.secret.text_8": "Do you see that? Right there, behind the basin?",
+  "create_salvage.ponder.shared.salvaging.secret.text_9": "Get this dingy contraption out of the way, I want a better look at whatever that... THING, is.",
+  "create_salvage.ponder.shared.salvaging.secret.text_10": "Wha... A GOBLIN?",
+  "create_salvage.ponder.shared.salvaging.secret.text_11": "No, no, no, this is all wrong! How long has this... GREASY little chudling been LURKING here, waiting for the perfect chance to strike?",
+  "create_salvage.ponder.shared.salvaging.secret.text_12": "...this wasn't how it was supposed to go, you know.",
+  "create_salvage.ponder.shared.salvaging.secret.text_13": "I had the perfect scene, all choreographed and ready to show you.",
+  "create_salvage.ponder.shared.salvaging.secret.text_14": "I was supposed to show you how to Salvage your spare tools, I was supposed to bring KNOWLEDGE!",
+  "create_salvage.ponder.shared.salvaging.secret.text_15": "And look what that got me. Just this... GOBLIN. He's not even helping, he's just sitting there, silently JUDGING me for my failure.",
+  "create_salvage.ponder.shared.salvaging.secret.text_16": "...no hope of doing that now.",
+  "create_salvage.ponder.shared.salvaging.secret.text_17": "I'm done. Scene's over. Go home."
+}

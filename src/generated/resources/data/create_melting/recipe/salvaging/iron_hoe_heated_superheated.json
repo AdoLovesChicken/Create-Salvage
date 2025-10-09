@@ -1,0 +1,12 @@
+{
+  "type": "create_melting:salvaging",
+  "ingredient": {
+    "item": "minecraft:iron_hoe"
+  },
+  "result_amount": 1.0,
+  "result_material": {
+    "ingot": "minecraft:iron_ingot",
+    "nugget": "minecraft:iron_nugget",
+    "ratio": 9
+  }
+}

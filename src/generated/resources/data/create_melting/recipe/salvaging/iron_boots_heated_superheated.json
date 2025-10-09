@@ -1,0 +1,12 @@
+{
+  "type": "create_melting:salvaging",
+  "ingredient": {
+    "item": "minecraft:iron_boots"
+  },
+  "result_amount": 2.0,
+  "result_material": {
+    "ingot": "minecraft:iron_ingot",
+    "nugget": "minecraft:iron_nugget",
+    "ratio": 9
+  }
+}

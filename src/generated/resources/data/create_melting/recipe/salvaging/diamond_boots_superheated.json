@@ -1,0 +1,13 @@
+{
+  "type": "create_melting:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "minecraft:diamond_boots"
+  },
+  "result_amount": 2.0,
+  "result_material": {
+    "ingot": "minecraft:diamond",
+    "nugget": "create_melting:diamond_nugget",
+    "ratio": 9
+  }
+}

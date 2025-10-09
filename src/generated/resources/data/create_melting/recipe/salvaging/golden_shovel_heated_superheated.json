@@ -1,0 +1,12 @@
+{
+  "type": "create_melting:salvaging",
+  "ingredient": {
+    "item": "minecraft:golden_shovel"
+  },
+  "result_amount": 0.5,
+  "result_material": {
+    "ingot": "minecraft:gold_ingot",
+    "nugget": "minecraft:gold_nugget",
+    "ratio": 9
+  }
+}

@@ -133,13 +133,28 @@ dependencies {
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
     // JEI
-    compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}") // JEI API
+    // compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}") // JEI API
     // runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}") // JEI Mod
-    // implementation("mezz.jei:jei-$minecraft_version-neoforge:$jei_version")
+    implementation("mezz.jei:jei-$minecraft_version-neoforge:$jei_version")
 
-    // Additional mods
-    compileOnly("curse.maven:project-549225:6531439") // Framework
-    compileOnly("curse.maven:project-363703:6427515") // Goblin Traders
+    // Additional mods via CurseForge
+
+    compileOnly("curse.maven:framework-549225:6531439") // Framework
+    compileOnly("curse.maven:goblin-traders-363703:6427515") // Goblin Traders
+
+    compileOnly("maven.modrinth:copper-backport:IESUFayw") // Leaf's Copper Backport
+
+    compileOnly("maven.modrinth:owo-lib:0.12.15.5-beta.1+1.21") // owo
+    compileOnly("maven.modrinth:aether:1.21.1-1.5.10-neoforge") // The Aether
+    compileOnly("maven.modrinth:deep-aether:1.21.1-1.1.4") // Deep Aether
+
+    compileOnly("maven.modrinth:farmers-delight:1.21.1-1.2.9") // Farmers Delight
+    compileOnly("maven.modrinth:the-aethers-delight:0.1.4.1") // Aethers Delight
+
+    //
+    // NOTE TO SELF: If you're trying to use a class from a dependency, but it's missing,
+    // go into the Gradle pane and click Sync All Gradle Projects
+    //
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

@@ -42,10 +42,6 @@ public class SalvagingRecipe implements Recipe<RecipeInput>  {
         this.params = params;
     }
 
-    public static boolean apply(BasinBlockEntity basin, SalvagingRecipe recipe) {
-        return apply(basin, recipe, false);
-    }
-
     public static boolean apply(BasinBlockEntity basin, SalvagingRecipe recipe, boolean test) {
         Level level = basin.getLevel();
         if (level == null) return false;
@@ -160,10 +156,6 @@ public class SalvagingRecipe implements Recipe<RecipeInput>  {
                 results.add(stack);
         }
         return results;
-    }
-
-    public List<ItemStack> buildResults() {
-        return buildResults(1F);
     }
 
     @Override

@@ -21,9 +21,4 @@ public class CreateSalvagePonder implements PonderPlugin {
     public void registerScenes(PonderSceneRegistrationHelper<ResourceLocation> helper) {
         CreateSalvagePonderScenes.register(helper);
     }
-
-    @Override
-    public void registerTags(PonderTagRegistrationHelper<ResourceLocation> helper) {
-        //CreateSalvagePonderTags.register(helper);
-    }
 }

@@ -3,10 +3,8 @@ package com.elitemastereric.createsalvage.content.salvaging;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import com.simibubi.create.content.kinetics.deployer.ItemApplicationRecipeParams;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeParams;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -20,6 +18,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.ParametersAreNonnullByDefault;
+import java.util.Optional;
 
 /**
  * The parameters for the ingredients of a Salvaging processing recipe.
@@ -77,29 +76,12 @@ public class SalvagingRecipeParams {
         return resultAmount;
     }
 
-    protected final NonNullList<ProcessingOutput> results() {
-         return resultMaterial.calculate(resultAmount);
-    }
-
-    protected ProcessingRecipeParams toBasinParams() {
-        return new SalvagingProcessingRecipeParams(ingredient, requiredHeat, results());
-    }
-
-    static class SalvagingProcessingRecipeParams extends ItemApplicationRecipeParams {
-        public SalvagingProcessingRecipeParams(Ingredient ingredient, HeatCondition requiredHeat, NonNullList<ProcessingOutput> results) {
-            super();
-            this.ingredients = NonNullList.of(ingredient);
-            this.requiredHeat = requiredHeat;
-            this.results = results;
-        }
-    }
-
     public static class SalvagingMaterial {
         public static MapCodec<SalvagingMaterial> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
                 BuiltInRegistries.ITEM.byNameCodec().fieldOf("ingot")
                         .forGetter(SalvagingMaterial::ingot),
-                BuiltInRegistries.ITEM.byNameCodec().optionalFieldOf("nugget", null)
-                        .forGetter(SalvagingMaterial::nugget),
+                BuiltInRegistries.ITEM.byNameCodec().optionalFieldOf("nugget")
+                        .forGetter(s -> Optional.ofNullable(s.nugget)),
                 Codec.INT.optionalFieldOf("ratio", 0)
                         .forGetter(SalvagingMaterial::ratio))
                 .apply(instance, SalvagingMaterial::new));
@@ -119,10 +101,19 @@ public class SalvagingRecipeParams {
 
         protected int ratio;
 
-        public SalvagingMaterial(Item ingot, @Nullable Item nugget, int ratio) {
+        @SuppressWarnings("OptionalUsedAsFieldOrParameterType")
+        public SalvagingMaterial(Item ingot, Optional<Item> nugget, int ratio) {
             this.ingot = ingot;
-            this.nugget = nugget;
+            this.nugget = nugget.orElse(null);
             this.ratio = ratio;
+        }
+
+        public SalvagingMaterial(Item ingot, @Nullable Item nugget, int ratio) {
+            this(ingot, Optional.ofNullable(nugget), ratio);
+        }
+
+        public SalvagingMaterial(Item ingot) {
+            this(ingot, Optional.empty(), 0);
         }
 
         public Item ingot() {
@@ -147,7 +138,7 @@ public class SalvagingRecipeParams {
             int ingotAmount = (int) Math.floor(amount);
             if (ingotAmount > 0) results.add(new ProcessingOutput(ingot, ingotAmount, 1F));
 
-            if (nugget != null) {
+            if (ratio > 0 && nugget != null) {
                 float remainder = amount - ingotAmount;
                 int nuggetAmount = (int) Math.floor(remainder * ratio);
                 if (nuggetAmount > 0) results.add(new ProcessingOutput(nugget, nuggetAmount, 1F));

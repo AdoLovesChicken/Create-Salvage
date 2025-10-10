@@ -19,8 +19,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.fml.loading.LoadingModList;
 
-import static com.elitemastereric.createsalvage.client.ponder.scene.SecretScene.secretScene;
-
 public class SalvagingScene {
     static final RandomSource RANDOM = RandomSource.create();
 
@@ -250,7 +248,7 @@ public class SalvagingScene {
             // while the necessary mods aren't installed, we're fine.
             SecretScene.secretScene(builder, scene, util);
             return;
-        };
+        }
 
         // STEP 9: Superheat the Blaze Burner.
         scene.idle(20);
@@ -259,7 +257,7 @@ public class SalvagingScene {
                 .withItem(AllItems.BLAZE_CAKE.asStack());
         scene.idle(7);
         scene.world().modifyBlock(blazeBurnerPos, s -> s.setValue(BlazeBurnerBlock.HEAT_LEVEL, BlazeBurnerBlock.HeatLevel.SEETHING), false);
-        scene.idle(20);
+        scene.idle(30);
 
         scene.overlay().showText(80)
                 .attachKeyFrame()

@@ -2,6 +2,7 @@ package com.elitemastereric.createsalvage.data.recipe;
 
 import com.elitemastereric.createsalvage.CreateSalvage;
 import com.elitemastereric.createsalvage.ModItems;
+import com.elitemastereric.createsalvage.data.recipe.compat.CompatSalvagingRecipeProvider;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.CachedOutput;
@@ -44,6 +45,8 @@ public class CreateSalvageRecipeProvider extends RecipeProvider {
 
     public static void registerProcessingRecipes(DataGenerator gen, PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         GENERATORS.add(new CreateSalvageSalvagingRecipeProvider(output, registries));
+
+        CompatSalvagingRecipeProvider.generate(GENERATORS, output, registries);
 
         gen.addProvider(true, new DataProvider() {
             @Override

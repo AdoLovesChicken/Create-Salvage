@@ -10,21 +10,16 @@ import com.simibubi.create.content.processing.burner.BlazeBurnerBlock;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import com.simibubi.create.content.processing.recipe.ProcessingOutput;
 import com.simibubi.create.foundation.gui.AllGuiTextures;
-import com.simibubi.create.foundation.item.ItemHelper;
 import com.simibubi.create.foundation.utility.CreateLang;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
-import net.createmod.catnip.data.Pair;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.world.item.crafting.Ingredient;
-import org.apache.commons.lang3.mutable.MutableInt;
 
 import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.List;
 
 @ParametersAreNonnullByDefault
 @MethodsReturnNonnullByDefault
@@ -38,8 +33,6 @@ public class SalvagingCategory extends CreateRecipeCategory<SalvagingRecipe> {
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, SalvagingRecipe recipe, IFocusGroup focuses) {
-        List<Pair<Ingredient, MutableInt>> condensedIngredients = ItemHelper.condenseIngredients(recipe.getIngredients());
-
         builder
                 .addSlot(RecipeIngredientRole.INPUT, 17, 51)
                 .setBackground(getRenderedSlot(), -1, -1)

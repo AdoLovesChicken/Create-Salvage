@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aethersdelight"
+    }
+  ],
+  "type": "create_salvage:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "aethersdelight:gravitite_knife"
+  },
+  "result_amount": 0.5,
+  "result_material": {
+    "ingot": "aether:enchanted_gravitite"
+  }
+}

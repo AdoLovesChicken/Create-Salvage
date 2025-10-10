@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deep_aether"
+    }
+  ],
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "deep_aether:skyjade_boots"
+  },
+  "result_amount": 2.0,
+  "result_material": {
+    "ingot": "deep_aether:skyjade"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "aether"
+    }
+  ],
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "aether:zanite_sword"
+  },
+  "result_amount": 1.0,
+  "result_material": {
+    "ingot": "aether:zanite_gemstone"
+  }
+}

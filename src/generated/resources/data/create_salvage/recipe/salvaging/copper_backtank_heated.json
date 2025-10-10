@@ -1,0 +1,12 @@
+{
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "create:copper_backtank"
+  },
+  "result_amount": 6.0,
+  "result_material": {
+    "ingot": "minecraft:copper_ingot",
+    "nugget": "create:copper_nugget",
+    "ratio": 9
+  }
+}

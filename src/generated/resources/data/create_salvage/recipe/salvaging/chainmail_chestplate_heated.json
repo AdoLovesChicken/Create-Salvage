@@ -1,0 +1,10 @@
+{
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "minecraft:chainmail_chestplate"
+  },
+  "result_amount": 4.0,
+  "result_material": {
+    "ingot": "minecraft:chain"
+  }
+}

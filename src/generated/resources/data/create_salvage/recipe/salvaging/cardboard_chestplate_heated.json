@@ -1,0 +1,10 @@
+{
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "create:cardboard_chestplate"
+  },
+  "result_amount": 4.0,
+  "result_material": {
+    "ingot": "create:cardboard"
+  }
+}

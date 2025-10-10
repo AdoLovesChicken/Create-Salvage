@@ -2,11 +2,10 @@
   "type": "create_salvage:salvaging",
   "heat_requirement": "superheated",
   "ingredient": {
-    "item": "minecraft:diamond_axe"
+    "item": "create:cardboard_boots"
   },
-  "result_amount": 1.5,
+  "result_amount": 4.0,
   "result_material": {
-    "ingot": "minecraft:diamond",
-    "ratio": 0
+    "ingot": "create:cardboard"
   }
 }

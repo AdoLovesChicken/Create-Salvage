@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "create_salvage:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "farmersdelight:iron_knife"
+  },
+  "result_amount": 1.0,
+  "result_material": {
+    "ingot": "minecraft:iron_ingot",
+    "nugget": "minecraft:iron_nugget",
+    "ratio": 9
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "create_salvage:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "farmersdelight:netherite_knife"
+  },
+  "result_amount": 0.5,
+  "result_material": {
+    "ingot": "minecraft:netherite_ingot",
+    "nugget": "minecraft:netherite_scrap",
+    "ratio": 4
+  }
+}

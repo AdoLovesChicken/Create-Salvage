@@ -1,0 +1,10 @@
+{
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "minecraft:chainmail_boots"
+  },
+  "result_amount": 2.0,
+  "result_material": {
+    "ingot": "minecraft:chain"
+  }
+}

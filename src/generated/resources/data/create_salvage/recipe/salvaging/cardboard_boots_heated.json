@@ -1,0 +1,10 @@
+{
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "create:cardboard_boots"
+  },
+  "result_amount": 2.0,
+  "result_material": {
+    "ingot": "create:cardboard"
+  }
+}

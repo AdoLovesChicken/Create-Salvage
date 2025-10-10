@@ -1,0 +1,10 @@
+{
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "create:cardboard_helmet"
+  },
+  "result_amount": 2.5,
+  "result_material": {
+    "ingot": "create:cardboard"
+  }
+}

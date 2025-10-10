@@ -1,0 +1,13 @@
+{
+  "type": "create_salvage:salvaging",
+  "heat_requirement": "superheated",
+  "ingredient": {
+    "item": "create:copper_diving_boots"
+  },
+  "result_amount": 4.0,
+  "result_material": {
+    "ingot": "minecraft:copper_ingot",
+    "nugget": "create:copper_nugget",
+    "ratio": 9
+  }
+}

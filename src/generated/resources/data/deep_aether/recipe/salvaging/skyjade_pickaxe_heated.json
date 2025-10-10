@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "deep_aether"
+    }
+  ],
+  "type": "create_salvage:salvaging",
+  "ingredient": {
+    "item": "deep_aether:skyjade_pickaxe"
+  },
+  "result_amount": 1.5,
+  "result_material": {
+    "ingot": "deep_aether:skyjade"
+  }
+}

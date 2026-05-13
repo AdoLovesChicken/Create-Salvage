@@ -19,6 +19,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
@@ -95,7 +96,7 @@ public class SalvagingRecipe implements Recipe<RecipeInput>  {
 
                 float durability = (float) (extractedItem.getMaxDamage() - extractedItem.getDamageValue()) / extractedItem.getMaxDamage();
                 CreateSalvage.LOGGER.info("Simulating crafting with durability: {}", durability);
-                recipeOutputItems.addAll(recipe.buildResults(durability));
+                recipeOutputItems.addAll(recipe.buildResults(durability, level.random));
 
                 for (ItemStack stack : recipe.getRemainingItems(remainderInput))
                     if (!stack.isEmpty())
@@ -146,12 +147,12 @@ public class SalvagingRecipe implements Recipe<RecipeInput>  {
         return getResults(1F);
     }
 
-    public List<ItemStack> buildResults(float durability) {
+    public List<ItemStack> buildResults(float durability, RandomSource random) {
         List<ProcessingOutput> resultsToBuild = getResults(durability);
 
         List<ItemStack> results = new ArrayList<>();
         for (ProcessingOutput output : resultsToBuild) {
-            ItemStack stack = output.rollOutput();
+            ItemStack stack = output.rollOutput(random);
             if (!stack.isEmpty())
                 results.add(stack);
         }
